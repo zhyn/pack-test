@@ -1,0 +1,14 @@
+{
+  "name": "tools-test",
+  "version": "1.0.0",
+  "description": "仅测试",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

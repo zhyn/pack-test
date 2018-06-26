@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <title>test</title>
+</head>
+<body>
+<div id="app">{{meg}}
+
+    <p @click="add">list</p>
+</div>
+<script >
+// import tools from 'index.js';
+var wv = new Vue({
+    el: '#app',
+    data:{
+        meg: 'hello world!',
+        // tools: require('./index.js')
+    },
+    methods:{
+        add:function(){
+            console.log('click add')
+        },
+    }
+});
+
+function songs(obj){
+    if ( obj && typeof(obj.sing) == 'function'){
+        console.log('welcome join '+ obj.name);
+    }
+}
+var durk = {
+    name: 'durk',
+    sing: function(){
+        console.log('durk')
+    }
+}
+var dog = {
+    name: 'dog',
+    sing: function(){
+        console.log('dog');
+    }
+}
+songs(durk)
+songs(dog)
+
+</script>  
+
+</body>
+</html>
