@@ -1,12 +1,9 @@
-// import * as utils from './lib/utils';
+import globalTools from './lib/utils';
+import eppSDK from './lib/clientSDK';
 
-// export default {
-//     utils : utils,
-// }
 
-const globalToos = {
-    sendText : function(name){
-        console.log('hello' + name);
-    }
+const mains = {
+    globalTools: globalTools,
+    eppSDK: eppSDK,
 }
-module.exports = globalToos;
+module.exports = mains;
