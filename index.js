@@ -6,4 +6,4 @@ const mains = {
     globalTools: globalTools,
     eppSDK: eppSDK,
 }
-module.exports = mains;
+module.export = mains;
