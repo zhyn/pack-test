@@ -4,11 +4,9 @@
 //     utils : utils,
 // }
 
-var globalToos = {
-
-
+const globalToos = {
     sendText : function(name){
         console.log('hello' + name);
     }
 }
-exports.globalToos = globalToos;
+module.exports = globalToos;
